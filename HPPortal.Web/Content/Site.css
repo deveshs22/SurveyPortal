@@ -1,0 +1,76 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+.maxWidth {
+    max-width: 280px;
+}
+
+/* Scroller Box */
+#scroller_container {
+ position: relative;
+ width: 120px;
+ height: 200px;
+ overflow: hidden;
+}
+
+#scroller p {
+ padding: 0;
+}
+/* Scoller Box */
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="select"],
+input[type="number"],
+input[type="date"]
+ {
+    max-width: 280px;
+}
+
+.checkboxlist input {
+        margin-top: 7px;
+}
+.checkboxlist label {
+    margin-top: 7px;
+    margin-right: 10px !important;
+    margin-left: 5px !important;
+}
+
+.centeralign {
+    text-align: center !important;
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+    .body-content {
+        padding: 0;
+    }
+}
+
+.shadow {
+    text-shadow: 1px 2px 3px #a3d0b0, 0 0 0 #000, 1px 2px 3px #a3d0b0; 
+}
